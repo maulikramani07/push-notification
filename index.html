@@ -13,19 +13,18 @@
         
 
         function notify() {
-            //var header = document.getElementById("header").value;
-           // var msg = document.getElementById("msg").value;
+            var header = document.getElementById("header").value;
+            var msg = document.getElementById("msg").value;
             // alert(msg);
-//             Push.create(header, {
-//                 body: msg,
-//                 icon: '/icon.png',
-//                 timeout: 4000,
-//                 onClick: function () {
-//                     window.focus();
-//                     this.close();
-//                 }
-//             });
-            Push.create('Hello World!')
+            Push.create(header, {
+                body: msg,
+                icon: '/logo.png',
+                timeout: 4000,
+                onClick: function () {
+                    window.focus();
+                    this.close();
+                }
+            });
 
         }
 
